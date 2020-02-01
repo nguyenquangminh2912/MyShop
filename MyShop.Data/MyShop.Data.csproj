@@ -59,9 +59,9 @@
     <Compile Include="Infrastructer\IUnitOfWork.cs" />
     <Compile Include="Infrastructer\RepositoryBase.cs" />
     <Compile Include="Infrastructer\UnitOfWork.cs" />
-    <Compile Include="Migrations\202001210852497_InitialDB.cs" />
-    <Compile Include="Migrations\202001210852497_InitialDB.designer.cs">
-      <DependentUpon>202001210852497_InitialDB.cs</DependentUpon>
+    <Compile Include="Migrations\202002011653148_InitialDB.cs" />
+    <Compile Include="Migrations\202002011653148_InitialDB.designer.cs">
+      <DependentUpon>202002011653148_InitialDB.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MyShopDBContext.cs" />
@@ -85,7 +85,9 @@
     <Compile Include="Repositories\VisitorStatisticRepository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -99,8 +101,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202001210852497_InitialDB.resx">
-      <DependentUpon>202001210852497_InitialDB.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202002011653148_InitialDB.resx">
+      <DependentUpon>202002011653148_InitialDB.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
